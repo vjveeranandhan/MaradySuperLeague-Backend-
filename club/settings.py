@@ -146,4 +146,4 @@ MEDIA_URL = '/media/'
 # Path where media is stored  
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')  
 
-BASE_URL = 'http://127.0.0.1:8000/'
+BASE_URL = 'http://3.90.26.72:8000/'
