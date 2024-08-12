@@ -13,7 +13,7 @@ class CustomUser(AbstractUser):
     date_of_birth = models.DateField(null=True)
     bio = models.TextField(max_length=500, blank=True)
     phone = models.CharField(max_length=20, blank=False, null=False, verbose_name='Phone Number')
-    user_types = models.ManyToManyField(UserType)
+    user_type = models.ManyToManyField(UserType, blank=True)
 
     def __str__(self):
         return self.username
